@@ -8,7 +8,7 @@ def showDictionary():
     print('|\tKey\t|\tValue\t|')
     print('=================================')
     for i in (list(dictAwal)):
-        if (str(dictAwal.get(i)).isdigit()==True)  :
+        if (str(dictAwal[i]).isdigit()==True)  :
             print("|\t'"+ str(i) + "'\t|\t" + str(dictAwal.get(i))+"\t|")
         else:
             print("|\t'"+ str(i) + "'\t|\t'" + str(dictAwal.get(i))+"'\t|")
@@ -57,6 +57,8 @@ while keluar==False:
     elif int(pilihMenu)==4:
         keluar = True
 print('Terimakasih sudah menggunakan aplikasi kami')
+
+# Delete dictionary (ex: satu elemen) bisa menggunakan del dict['key]
 
 
 
