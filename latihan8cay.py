@@ -1,7 +1,8 @@
-
+# Tugas Dictionary
 
 dictAwal = {}
 
+# Fungsi untuk menampilkan dictionary
 def showDictionary():
     print('=================================')
     print('|\tKey\t|\tValue\t|')
@@ -13,6 +14,7 @@ def showDictionary():
             print("|\t'"+ str(i) + "'\t|\t'" + str(dictAwal.get(i))+"'\t|")
     print('=================================')
 
+# Fungsi untuk menambahkan dictionary
 def addDictionary():
     inputDict= input('Masukan jumlah dictionary yang akan diinput= ')
     for i in range (int(inputDict)):
@@ -26,6 +28,7 @@ def addDictionary():
     print('Data sudah berhasil diinputkan ')
     return dictAwal
 
+# Fungsi untuk mencari dan filter dictionary
 def searchDictionary():
     print(dictAwal)
     b = input ('Search : ')
@@ -40,6 +43,7 @@ def searchDictionary():
         print('|\t'+ str(i) + '\t|\t'+ str(newDict.get(i))+'\t|')
     print('=================================')
 
+# Aplikasi utama
 keluar = False
 while keluar==False:
     print('Main menu\n1. Lihat full dictionary\n2. Isi Dictionary\n3. Searching Dictionary\n4. Keluar')
